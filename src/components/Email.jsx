@@ -2,11 +2,18 @@ import React from "react";
 import { useState } from "react";
 
 const Email = () => {
+  //manage submission status
   const [submitted, setSubmitted] = useState(false);
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
 
+  //event handler for submission
   const handleSubmit = (e) => {
+    //prevent default form submission
     e.preventDefault();
+    //log to console
     console.log("Submitted");
+    //update state status to true
     setSubmitted(true);
   };
 
@@ -29,6 +36,7 @@ const Email = () => {
           Subscribe to monthly newsletter
         </button>
       </form>
+      {/* display message when submitted */}
       {submitted && (
         <p className="text-sm text-dark-slate-grey mt-2 font-bold">
           Thank you for subscribing!

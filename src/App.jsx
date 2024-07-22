@@ -7,15 +7,15 @@ function App() {
     <>
       <div id="bg-container" className="bg-dark-slate-grey font-roboto">
         <div className="bg-white rounded">
-          <div className="flex flex-row p-6 items-center justify-center">
-            <div className="flex flex-col">
-              <h1 className="text-characoal-grey text-2xl md:text-4xl">
+          <div className="flex flex-row p-6 justify-center">
+            <div className="flex flex-col mt-20 p-16">
+              <h1 className="text-characoal-grey font-bold text-3xl md:text-6xl">
                 Stay updated!
               </h1>
               <Text />
             </div>
             <div>
-              <img src={illustrationSignUp} alt="Illustration sign up" />
+              <img src={illustrationSignUp} alt="Illustration sign up" className="rounded-lg" />
             </div>
           </div>
         </div>

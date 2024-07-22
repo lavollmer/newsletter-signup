@@ -2,7 +2,7 @@ import React from "react";
 
 const Email = () => {
   return (
-    <div className="flex flex-col justify-start">
+    <div className="flex flex-col justify-start mt-4">
       <h3 className="text-sm text-dark-slate-grey font-bold">Email Address</h3>
       <div>
         <input

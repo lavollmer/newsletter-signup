@@ -64,6 +64,7 @@ Users should be able to:
 ### Useful resources
 
 - [Google Font Roboto](https://fonts.google.com/specimen/Roboto) - Design required Google Font Roboto
+- [TailwindCSS Button Styling] (https://v1.tailwindcss.com/components/buttons) - Resource for button styling
 
 
 ## Author

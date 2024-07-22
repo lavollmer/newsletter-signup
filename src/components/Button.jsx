@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Button = () => {
   return (
     <div>
-        <button className='bg-dark-slate-grey text-white md:text-lg text-md py-2 px-6 rounded-lg'>Subscribe to monthly newsletter</button>
+      <button className="bg-dark-slate-grey hover:bg-grey text-white md:text-lg text-md px-4 py-4 rounded">
+        Subscribe to monthly newsletter
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

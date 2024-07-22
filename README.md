@@ -1,6 +1,6 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,7 +14,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-
 
 ## Overview
 
@@ -34,8 +33,6 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
@@ -52,25 +49,17 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-
-
 ### What I learned
 
-
 ### Continued development
-
-
 
 ### Useful resources
 
 - [Google Font Roboto](https://fonts.google.com/specimen/Roboto) - Design required Google Font Roboto
 - [TailwindCSS Button Styling] (https://v1.tailwindcss.com/components/buttons) - Resource for button styling
 
-
 ## Author
 
 - Website - [Laura V](www.lauradeveloper.com)
 - Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
 - Github - [@lavollmer](https://github.com/lavollmer)
-
-

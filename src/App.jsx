@@ -10,7 +10,7 @@ function App() {
         <div className="bg-white rounded">
           <div className="flex flex-row p-6 justify-center">
             <div className="flex flex-col mt-18 p-16">
-              <h1 className="text-characoal-grey font-bold text-3xl md:text-6xl">
+              <h1 className="text-charcoal-grey font-bold text-3xl md:text-6xl">
                 Stay updated!
               </h1>
               <div className="flex flex-col items-center justify-center">

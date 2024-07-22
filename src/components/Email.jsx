@@ -41,7 +41,7 @@ const Email = () => {
           <p
             className={`${
               error
-                ? "text-custom-size-12 font-bold mb-2 absolute right-0"
+                ? "text-md font-bold absolute right-0 cursor-pointer text-tomato"
                 : "hidden"
             }`}
           >
@@ -65,7 +65,7 @@ const Email = () => {
               }
             }}
           />
-          <button className="text-white bg-grey rounded-lg px-10 py-2">
+          <button className="text-white bg-charcoal-grey rounded-lg px-10 py-2 cursor-pointer hover:bg-tomato">
             Subscribe to monthly newsletter
           </button>
         </form>

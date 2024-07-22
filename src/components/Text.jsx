@@ -3,7 +3,7 @@ import iconList from "../assets/icon-list.svg";
 
 const Text = () => {
   return (
-    <div className="flex flex-col font-roboto font-bold text-dark-slate-gray mt-8">
+    <div className="flex flex-col font-roboto font-bold text-charcoal-grey mt-8">
       <div>
         <h2>Join 60,000+ product managers receiving monthly updated on:</h2>
       </div>

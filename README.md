@@ -57,6 +57,7 @@ Users should be able to:
 
 - [Google Font Roboto](https://fonts.google.com/specimen/Roboto) - Design required Google Font Roboto
 - [TailwindCSS Button Styling] (https://v1.tailwindcss.com/components/buttons) - Resource for button styling
+- [Frontend Newsletter Reference] (https://github.com/roidzuh/frontend-mentor/tree/main/newsletter-sign-up-form)
 
 ## Author
 

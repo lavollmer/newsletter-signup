@@ -19,9 +19,6 @@ function App() {
               <div className="flex flex-col justify-start mt-6">
                 <Email />
               </div>
-              {/* <div className="flex flex-row items-center justify-center mt-6">
-                <Button />
-              </div> */}
             </div>
             <div>
               <img

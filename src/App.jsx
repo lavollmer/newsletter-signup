@@ -14,12 +14,22 @@ function App() {
               <h1 className="text-characoal-grey font-bold text-3xl md:text-6xl">
                 Stay updated!
               </h1>
-              <Text />
-              <Email />
-              <Button />
+              <div className="flex flex-col items-center justify-center">
+                <Text />
+              </div>
+              <div className="flex flex-col justify-start mt-6">
+                <Email />
+              </div>
+              <div className="flex flex-row items-center justify-center mt-6">
+                <Button />
+              </div>
             </div>
             <div>
-              <img src={illustrationSignUp} alt="Illustration sign up" className="rounded-lg" />
+              <img
+                src={illustrationSignUp}
+                alt="Illustration sign up"
+                className="rounded-lg"
+              />
             </div>
           </div>
         </div>

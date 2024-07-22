@@ -3,7 +3,7 @@ import illustrationSignUp from "./assets/illustration-sign-up-desktop.svg";
 import Text from "./components/Text.jsx";
 import Email from "./components/Email.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ThankYou from "./components/ThankYou.jsx"; 
+import ThankYou from "./components/ThankYou.jsx";
 
 function App() {
   return (
@@ -18,15 +18,10 @@ function App() {
               <div className="flex flex-col items-center justify-center">
                 <Text />
               </div>
-              <div className="flex flex-col justify-start mt-6">
-                <Email />
-              </div>
-              <Router>
-                <Routes>
-                  <Route path="/" exact component={Email} />
-                  <Route path="/thank-you" component={ThankYou} />
-                </Routes>
-              </Router>
+              <Routes>
+                <Route path="/" element={<Email />} />
+                <Route path="/thank-you" element={<ThankYou />} />
+              </Routes>
             </div>
             <div>
               <img

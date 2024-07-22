@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const Email = () => {
   const [error, setError] = useState(false);
   const validate = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
-  const history = useHistory(); // Hook for navigation
+  const navigate = useNavigate();
 
 
   function validateEmail(email) {
@@ -26,7 +27,7 @@ const Email = () => {
       setError(false);
       console.log("Email submitted: ", email);
       setEmail("");
-      history.push('/thank-you'); // Navigate to thank you page
+      navigate('/thank-you'); // Navigate to thank you page
     } else {
       setError(true);
     }

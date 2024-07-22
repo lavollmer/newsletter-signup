@@ -63,14 +63,13 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Google Font Roboto](https://fonts.google.com/specimen/Roboto) - Design required Google Font Roboto
 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Website - [Laura V](www.lauradeveloper.com)
+- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
+- Github - [@lavollmer](https://github.com/lavollmer)
 
 

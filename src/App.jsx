@@ -1,6 +1,8 @@
 import "./App.css";
 import illustrationSignUp from "./assets/illustration-sign-up-desktop.svg";
-import Text from "./components/Text";
+import Text from "./components/Text.jsx";
+import Email from "./components/Email.jsx";
+import Button from "./components/Button.jsx";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
                 Stay updated!
               </h1>
               <Text />
+              <Email />
+              <Button />
             </div>
             <div>
               <img src={illustrationSignUp} alt="Illustration sign up" className="rounded-lg" />

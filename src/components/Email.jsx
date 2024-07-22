@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import { useHistory } from 'react-router-dom';
 
 const Email = () => {
   const [error, setError] = useState(false);
   const validate = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
+  const history = useHistory(); // Hook for navigation
+
 
   function validateEmail(email) {
     return validate.test(email);
@@ -23,14 +26,16 @@ const Email = () => {
       setError(false);
       console.log("Email submitted: ", email);
       setEmail("");
-      setSuccess(true);
+      history.push('/thank-you'); // Navigate to thank you page
+    } else {
+      setError(true);
     }
   };
 
   return (
     <div className="flex flex-col mt-4">
       <h3 className="text-sm text-dark-slate-grey font-bold">Email Address</h3>
-      {success ? ( // Step 3: Conditionally render the thank you message
+      {success ? (
         <p className="text-lg text-dark-slate-grey">Thank you for subscribing!</p>
       ) : (
         <form

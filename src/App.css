@@ -4,3 +4,11 @@
   align-items: center;
   height: 100vh;
 }
+
+@media (max-width: 768px) {
+  #bg-container {
+    height: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+}

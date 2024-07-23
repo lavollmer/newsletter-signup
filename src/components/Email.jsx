@@ -75,7 +75,7 @@ const Email = () => {
           placeholder="email@company.com"
           // the input's value is bound the the email state variabl - updates this variable and clears the error state on change
           value={email}
-          // updates the email state variable on change
+          // onchange event handler - triggered whenever the value of the input changes
           onChange={(e) => {
             setEmail(e.target.value);
             if (error) {

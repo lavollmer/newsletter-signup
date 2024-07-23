@@ -8,18 +8,26 @@ const Text = () => {
         <h2>Join 60,000+ product managers receiving monthly updated on:</h2>
       </div>
       <div className="space-y-2 mt-8">
-        <ul className="flex flex-row">
+        <div className="flex flex-row">
           <img src={iconList} alt="icon list" />
-          <li className="ml-4">Product discovery and building what matters</li>
-        </ul>
-        <ul className="flex flex-row">
+          <ul className="flex flex-row">
+            <li className="ml-4">
+              Product discovery and building what matters
+            </li>
+          </ul>
+        </div>
+        <div className="flex flex-row">
           <img src={iconList} alt="icon list" />
-          <li className="ml-4">Measuring to ensure updates are a success</li>
-        </ul>
-        <ul className="flex flex-row">
+          <ul className="flex flex-row">
+            <li className="ml-4">Measuring to ensure updates are a success</li>
+          </ul>
+        </div>
+        <div className="flex flex-row">
           <img src={iconList} alt="icon list" />
-          <li className="ml-4">And much more!</li>
-        </ul>
+          <ul className="flex flex-row">
+            <li className="ml-4">And much more!</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

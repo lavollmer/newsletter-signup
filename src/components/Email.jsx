@@ -5,15 +5,17 @@ import { useNavigate } from 'react-router-dom';
 
 const Email = () => {
   const [error, setError] = useState(false);
-  const validate = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
   const navigate = useNavigate();
 
-
-  function validateEmail(email) {
-    return validate.test(email);
-  }
+// function named validateEmail that takes an argument email
+function validateEmail(email) {
+  // Define a regular expression for validating an email - starts with one or more charaacters that can be letters, numbers, periods, underscores, or hyphens, followed by an @ symbol, followed by one or more characters that can be letters, numbers, periods, or hyphens, followed by a period, followed by two to four letters
+  const validate = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  // Use the test method to validate the email - string matches the pattern defined by the regex
+  return validate.test(email);
+}
 
   const handleSubmit = (e) => {
     e.preventDefault();

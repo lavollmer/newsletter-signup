@@ -22,6 +22,7 @@ const ThankYou = () => {
             A confirmation email has been sent. Please open it and click the
             button inside to confirm your subscription.
           </p>
+          {/* Dismiss message button that will navigate to the home page when clicked */}
           <div className="flex flex-col mt-8 md:mt-40">
             <button
               onClick={() => navigate("/")}

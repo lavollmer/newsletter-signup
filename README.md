@@ -70,6 +70,7 @@ Mobile:
 I learned many things during my process of creating this application.
 
 1. React Router Dom - It is an npm package that enables you to implement dynamic routing in a web application. It is used to build single-page applications where the content is dynamically fetched based on the URL. The advantages are it is fast and the application has better performance. Router is the parent component that is used to store all the other components. Routes are used to define the navigation paths within a SPA. Route checks the current URL and displays the component with that exact path. Link is used to create links to different paths.
+2. Validating Email - I used a function named validateEmail that took a single argument of email. I used validate.test(email) to test if the string matched the pattern defined by the regex. The variable validate is a regular expression tha tmatches the basic structure of an email. The method returns true if the email argument matches this pattern and false otherwise.
 
 ### Continued development
 

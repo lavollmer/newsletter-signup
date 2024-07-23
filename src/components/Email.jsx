@@ -41,25 +41,26 @@ const Email = () => {
   return (
     // flexbox layout with a column direction
     <div className="flex flex-col mt-4">
-      {/* Displays email address text for the input form */}
-      <h3 className="text-sm text-dark-slate-grey font-bold">Email Address</h3>
-
+      <div className="flex flex-row justify-between mb-2">
+        {/* Displays email address text for the input form */}
+        <h3 className="text-sm text-dark-slate-grey font-bold">
+          Email Address
+        </h3>
+        {/* paragraph conditionally renders if error state is true */}
+        <p
+          className={`${
+            error ? "text-sm font-bold cursor-pointer text-black" : "hidden"
+          }`}
+        >
+          Valid email required
+        </p>
+      </div>
       <form
         id="form"
         className="flex flex-col relative"
         // handles submissions with handleSubmit function
         onSubmit={handleSubmit}
       >
-        {/* paragraph conditionally renders if error state is true */}
-        <p
-          className={`${
-            error
-              ? "text-md font-bold absolute right-0 cursor-pointer text-tomato"
-              : "hidden"
-          }`}
-        >
-          Valid email required
-        </p>
         {/* input field allows the user to enter their email address */}
         <input
           type="text"

@@ -67,13 +67,20 @@ Mobile:
 
 ### What I learned
 
+I learned many things during my process of creating this application.
+
+1. React Router Dom - It is an npm package that enables you to implement dynamic routing in a web application. It is used to build single-page applications where the content is dynamically fetched based on the URL. The advantages are it is fast and the application has better performance. Router is the parent component that is used to store all the other components. Routes are used to define the navigation paths within a SPA. Route checks the current URL and displays the component with that exact path. Link is used to create links to different paths.
+
 ### Continued development
+
+I will continue to work on my knowledge of routing in ReactJS, Javascript principles and much more.
 
 ### Useful resources
 
 - [Google Font Roboto](https://fonts.google.com/specimen/Roboto) - Design required Google Font Roboto
 - [TailwindCSS Button Styling] (https://v1.tailwindcss.com/components/buttons) - Resource for button styling
 - [Frontend Newsletter Reference] (https://github.com/roidzuh/frontend-mentor/tree/main/newsletter-sign-up-form)
+- [React Router Dom] (https://www.geeksforgeeks.org/what-is-react-router-dom/)
 
 ## Author
 

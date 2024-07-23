@@ -48,9 +48,13 @@ Mobile:
 
 ![Mobile Valid Email (No)](./src/assets/NotValidEmailMobile.png)
 
+Lighthouse Report: The lighthouse report included 100s in SEO, accessibility and best practices. The images provided would not allow for a 100 in load times. I am very happy with this report.
+
+![Lighthouse Report](./src/assets/LighthouseReport.png)
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Laura Solution](https://www.frontendmentor.io/solutions/reactjs-tailwindcss-vite-newsletter-sign-up-D96xllSXR1)
 - Live Site URL: [Netlify Solution](https://newsletter-signup-lav.netlify.app/)
 
 ## My process
@@ -78,6 +82,7 @@ Throughout the development of this application, I gained valuable insights and l
 
 ***Refactoring Code for Success Variable:*** During a review of my code, I noticed that I had included a success variable for conditional rendering, which ultimately was unnecessary. Initially, setting this variable to true would conditionally render a "Thank you for subscribing!" message. However, after integrating a dedicated thank you component page that appears upon submitting a valid email, I found the success variable and its associated code redundant. Removing this extraneous code streamlined the program's functionality.
 
+***Accessibility:*** During my review of my code and the lighthouse report, I found areas I could improve to make it more accessible. An example of this would be restructing the list code to have the correct elements. This brought the report up to 100. 
 
 
 ### Useful resources

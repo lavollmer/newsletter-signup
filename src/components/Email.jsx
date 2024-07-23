@@ -49,7 +49,7 @@ const Email = () => {
         {/* paragraph conditionally renders if error state is true */}
         <p
           className={`${
-            error ? "text-sm font-bold cursor-pointer text-black" : "hidden"
+            error ? "text-sm font-bold cursor-pointer text-tomato" : "hidden"
           }`}
         >
           Valid email required
@@ -69,7 +69,7 @@ const Email = () => {
           className={`${
             error
               ? // if error state is true, the input field will have a red border and background color
-                "px-6 py-4 border-2 border-tomato rounded-lg mb-6 bg-tomato cursor-pointer"
+                "px-6 py-4 border-2 border-tomato rounded-lg mb-6 bg-red-100 text-tomato cursor-pointer"
               : // if error state is false, the input field will have a gray border and background color
                 "px-6 py-4 border-2 rounded-lg border-custom-gray mb-6 cursor-pointer hover:border-custom-dark-navy"
           }`}

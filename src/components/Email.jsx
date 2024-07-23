@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const Email = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState("");
-  const [success, setSuccess] = useState(false);
   const navigate = useNavigate();
 
   // function named validateEmail that takes an argument email
@@ -36,56 +35,59 @@ const Email = () => {
       console.log("Email submitted: ", email);
       setEmail("");
       navigate("/thank-you"); // Navigate to thank you page
-    } else {
-      setError(true);
     }
   };
 
   return (
+    // flexbox layout with a column direction
     <div className="flex flex-col mt-4">
+      {/* Displays email address text for the input form */}
       <h3 className="text-sm text-dark-slate-grey font-bold">Email Address</h3>
-      {success ? (
-        <p className="text-lg text-dark-slate-grey">
-          Thank you for subscribing!
-        </p>
-      ) : (
-        <form
-          id="form"
-          className="flex flex-col relative"
-          onSubmit={handleSubmit}
+
+      <form
+        id="form"
+        className="flex flex-col relative"
+        // handles submissions with handleSubmit function
+        onSubmit={handleSubmit}
+      >
+        {/* paragraph conditionally renders if error state is true */}
+        <p
+          className={`${
+            error
+              ? "text-md font-bold absolute right-0 cursor-pointer text-tomato"
+              : "hidden"
+          }`}
         >
-          <p
-            className={`${
-              error
-                ? "text-md font-bold absolute right-0 cursor-pointer text-tomato"
-                : "hidden"
-            }`}
-          >
-            Valid email required
-          </p>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            className={`${
-              error
-                ? "px-6 py-4 border-2 rounded-lg border-custom-vermellion text-custom-vermellion placeholder-custom-vermellion mb-6 bg-custom-vermellion-15 cursor-pointer"
-                : "px-6 py-4 border-2 rounded-lg border-custom-gray mb-6 cursor-pointer hover:border-custom-dark-navy"
-            }`}
-            placeholder="email@company.com"
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-              if (error) {
-                setError(false);
-              }
-            }}
-          />
-          <button className="text-white bg-charcoal-grey rounded-lg px-10 py-2 cursor-pointer hover:bg-tomato">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
-      )}
+          Valid email required
+        </p>
+        {/* input field allows the user to enter their email address */}
+        <input
+          type="text"
+          name="email"
+          id="email"
+          className={`${
+            error
+              ? // if error state is true, the input field will have a red border and background color
+                "px-6 py-4 border-2 border-tomato rounded-lg mb-6 bg-tomato cursor-pointer"
+              : // if error state is false, the input field will have a gray border and background color
+                "px-6 py-4 border-2 rounded-lg border-custom-gray mb-6 cursor-pointer hover:border-custom-dark-navy"
+          }`}
+          placeholder="email@company.com"
+          // the input's value is bound the the email state variabl - updates this variable and clears the error state on change
+          value={email}
+          // updates the email state variable on change
+          onChange={(e) => {
+            setEmail(e.target.value);
+            if (error) {
+              setError(false);
+            }
+          }}
+        />
+        {/* submit button to invite user to subscribe */}
+        <button className="text-white bg-charcoal-grey rounded-lg px-10 py-2 cursor-pointer hover:bg-tomato">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
     </div>
   );
 };

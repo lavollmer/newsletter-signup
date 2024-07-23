@@ -38,7 +38,7 @@ Desktop:
 
 ![Desktop Subscribing Page](./src/assets/ThankYouSubscribingDesktop.png)
 
-![Desktop Valid Email Not Accepted](./src/assets/ValidEmailRequiredDesktop.png)
+![Desktop Valid Email Not Accepted](./src/assets/NotValidEmailDesktop.png)
 
 Mobile:
 
@@ -46,7 +46,7 @@ Mobile:
 
 ![Mobile Subscribing Page ](./src/assets/ThankYouSubscribingMobile.png)
 
-![Mobile Email Required ](./src/assets/ValidEmailRequiredMobile.png)
+![Mobile Valid Email (No)](./src/assets/NotValidEmailMobile.png)
 
 ### Links
 
@@ -77,6 +77,7 @@ Throughout the development of this application, I gained valuable insights and l
 ***handleSubmit Function:*** This function is designed to process user input. It prevents the default page reload, validates the email address, and provides an appropriate response based on the input. If the validation checks are passed, it navigates the user to a thank you page.
 
 ***Refactoring Code for Success Variable:*** During a review of my code, I noticed that I had included a success variable for conditional rendering, which ultimately was unnecessary. Initially, setting this variable to true would conditionally render a "Thank you for subscribing!" message. However, after integrating a dedicated thank you component page that appears upon submitting a valid email, I found the success variable and its associated code redundant. Removing this extraneous code streamlined the program's functionality.
+
 
 
 ### Useful resources

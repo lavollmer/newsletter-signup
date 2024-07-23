@@ -1,4 +1,6 @@
-# Frontend Mentor - Newsletter sign-up form with success message solution
+# Newsletter sign-up form with success message solution
+
+This project was aimed at creating a newsletter signup with a success message page. During this project, I used ReactJS, TailwindCSS, Vite and CSS. I worked through each step of the process to build my application. 
 
 This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -31,12 +33,26 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Desktop:
+
+![Desktop Landing Page](./src/assets/DesktopLandingPage.png)
+
+![Desktop Subscribing Page](./src/assets/ThankYouSubscribingDesktop.png)
+
+![Desktop Valid Email Not Accepted](./src/assets/ValidEmailRequiredDesktop.png)
+
+Mobile:
+
+![Mobile Landing Page ](./src/assets/PhoneLandingPage.png)
+
+![Mobile Subscribing Page ](./src/assets/ThankYouSubscribingMobile.png)
+
+![Mobile Email Required ](./src/assets/ValidEmailRequiredMobile.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify Solution](https://newsletter-signup-lav.netlify.app/)
 
 ## My process
 
